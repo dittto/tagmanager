@@ -1,3 +1,5 @@
+(function ($) {
+
 var TagManager = (function () {
     function TagManager(element, options) {
         var defaults = {
@@ -10,8 +12,8 @@ var TagManager = (function () {
                 8
             ],
             delimiterChars: [
-                13, 
-                44, 
+                13,
+                44,
                 188
             ],
             createHandler: function (tagManager, tag, isImport) {
@@ -177,3 +179,5 @@ $.fn.tagmanager = function (option) {
         }
     });
 };
+
+}(jQuery));
